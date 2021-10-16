@@ -1,0 +1,247 @@
+{
+  "Code": 200,
+  "Msg": "",
+  "Data": [
+    {
+      "Name": "ddns",
+      "Image": "fastosdocker/ddns",
+      "Env": [
+        
+      ],
+      "ContainerPort": [
+        
+      ],
+      "HostPort": [
+        
+      ],
+      "PortProtocol": [
+        
+      ],
+      "ContainerVolume": [
+        
+      ],
+      "HostVolume": [
+        
+      ],
+      "NetWork": "host",
+      "Icon": "/apps/library-mysql.png",
+      "Intro": "自动获得你的公网 IPv4 或 IPv6 地址。",
+      "Installed": 0,
+      "Description": "自动获得你的公网 IPv4 或 IPv6 地址"
+    },
+    {
+      "Name": "httpd",
+      "Image": "httpd:latest",
+      "Env": [
+        
+      ],
+      "ContainerPort": [
+        80,
+        8080
+      ],
+      "HostPort": [
+        80,
+        8080
+      ],
+      "PortProtocol": [
+        "tcp",
+        "tcp"
+      ],
+      "ContainerVolume": [
+        "/test1",
+        "/test2"
+      ],
+      "HostVolume": [
+        "9dc4da3cbeb5870e015aba50eb67934caa52799c9dc8b28c7268cefe66dfa70f",
+        "D:/Program Files (x86)/test"
+      ],
+      "NetWork": "",
+      "Icon": "/apps/library-httpd-logo.png",
+      "Intro": "Apache(音译为阿帕奇)是世界使用排名第一的Web服务器软件。它可以运行在几乎所有广泛使用的计算机平台上，由于其跨平台和安全性被广泛使用，是最流行的Web服务器端软件之一。它快速、可靠并且可通过简单的API扩充，将Perl/Python等解释器编译到服务器中。",
+      "Installed": 1,
+      "Description": ""
+    },
+    {
+      "Name": "kodbox",
+      "Image": "kodcloud/kodbox:latest",
+      "Env": [
+        
+      ],
+      "ContainerPort": [
+        80
+      ],
+      "HostPort": [
+        80
+      ],
+      "PortProtocol": [
+        "tcp"
+      ],
+      "ContainerVolume": [
+        "/var/www/html"
+      ],
+      "HostVolume": [
+        "/mnt/kodbox"
+      ],
+      "NetWork": "bridge",
+      "Icon": "/apps/library-kodbox-logo.png",
+      "Intro": "可道云KodBox是一款基于Web的在线文件管理软件，支持数百种文件格式在线预览、编辑和播放。底层架构方面，KodBox采用了数据库+文件存储的方式，存储方式还支持s3、oss等对象存储。KodBox同时采用细粒度的文档权限设置，提供了灵活强大的权限体系，能帮助您快速完成私有云/私有网盘/在线文档管理系统的部署和搭建。",
+      "Installed": 0,
+      "Description": ""
+    },
+    {
+      "Name": "mysql",
+      "Image": "mysql",
+      "Env": [
+        "MYSQL_ROOT_PASSWORD=admin"
+      ],
+      "ContainerPort": [
+        3306,
+        33060
+      ],
+      "HostPort": [
+        3306,
+        33060
+      ],
+      "PortProtocol": [
+        "tcp",
+        "tcp"
+      ],
+      "ContainerVolume": [
+        
+      ],
+      "HostVolume": [
+        
+      ],
+      "NetWork": "bridge",
+      "Icon": "/apps/library-mysql.png",
+      "Intro": "MySQL 是一种广泛使用的开源关系数据库管理系统。",
+      "Installed": 28,
+      "Description": "端口3306，MYSQL_ROOT_PASSWORD设置数据库密码必填"
+    },
+    {
+      "Name": "qbittorrent",
+      "Image": "linuxserver/qbittorrent",
+      "Env": [
+        "WEBUI_PORT=8080",
+        "TZ=Asia/Shanghai",
+        "PUID=1000",
+        "PGID=1000"
+      ],
+      "ContainerPort": [
+        6881,
+        6881,
+        8080
+      ],
+      "HostPort": [
+        6881,
+        6881,
+        8080
+      ],
+      "PortProtocol": [
+        "tcp",
+        "udp",
+        "tcp"
+      ],
+      "ContainerVolume": [
+        "/config",
+        "/downloads"
+      ],
+      "HostVolume": [
+        "/path/to/appdata/config",
+        "/path/to/downloads"
+      ],
+      "NetWork": "bridge",
+      "Icon": "/apps/qbittorrent-icon.png",
+      "Intro": "该Qbittorrent项目旨在提供一个开源软件替代的μTorrent。qBittorrent 基于 Qt 工具包和 libtorrent-rasterbar 库。",
+      "Installed": 0,
+      "Description": "容器端口8080，数据保存位置/path/to/downloads,默认用户名/密码为admin/adminadmin"
+    },
+    {
+      "Name": "speedtest",
+      "Image": "adolfintel/speedtest",
+      "Env": [
+        
+      ],
+      "ContainerPort": [
+        80
+      ],
+      "HostPort": [
+        8088
+      ],
+      "PortProtocol": [
+        "tcp"
+      ],
+      "ContainerVolume": [
+        
+      ],
+      "HostVolume": [
+        
+      ],
+      "NetWork": "bridge",
+      "Icon": "/apps/speedtest.png",
+      "Intro": "没有 Flash，没有 Java，没有 Websocket，没有废话。这是一个用 Javascript 实现的非常轻量级的 Speedtest，使用 XMLHttpRequest 和 Web Workers。",
+      "Installed": 0,
+      "Description": "容器端口80，"
+    },
+    {
+      "Name": "为知笔记",
+      "Image": "wiznote/wizserver",
+      "Env": [
+        
+      ],
+      "ContainerPort": [
+        80,
+        9269
+      ],
+      "HostPort": [
+        8088,
+        9269
+      ],
+      "PortProtocol": [
+        "tcp",
+        "udp"
+      ],
+      "ContainerVolume": [
+        "/wiz/storage"
+      ],
+      "HostVolume": [
+        "/mnt/wiz/storage"
+      ],
+      "NetWork": "bridge",
+      "Icon": "/apps/为知笔记.png",
+      "Intro": "为知笔记服务端提供了docker镜像，您只需要简单几步，就可以将为知笔记服务端部署在自己的服务器甚至自己的电脑上面",
+      "Installed": 0,
+      "Description": "容器端口80，数据保存位置/mnt/wiz/storage,9269端口客户端有个发现盒子功能，是针对局域网内的私有部署提供的"
+    },
+    {
+      "Name": "微力同步",
+      "Image": "jonnyan404/verysync",
+      "Env": [
+        
+      ],
+      "ContainerPort": [
+        8886,
+        22330
+      ],
+      "HostPort": [
+        8886,
+        22330
+      ],
+      "PortProtocol": [
+        "tcp",
+        "tcp"
+      ],
+      "ContainerVolume": [
+        "/data"
+      ],
+      "HostVolume": [
+        "/data"
+      ],
+      "NetWork": "bridge",
+      "Icon": "/apps/weilitongbu.png",
+      "Intro": "微力同步是一款可让您在多个设备上同步文件的应用程序，在您自己的机器组成的私有云上，在其中一台机器上创建，修改或删除文件会自动复制同步到其他设备。微力同步不会将您的数据上传到公有云端，而是在您自己的机器组成的私有云上互相同步交换数据。微力同步可在台式机，笔记本电脑，智能手机，平板电脑和网络连接的外围设备之间提供安全的点对点数据同步交换。 没有中心节点存储数据文件，所有数据的传输通过AES加密传送，确保数据的安全性，所有数据都存在自己管理的机器硬盘上，安全性有了更高的保障。",
+      "Installed": 0,
+      "Description": "容器端口8886，数据保存位置/data"
+    }
+  ]
+}
